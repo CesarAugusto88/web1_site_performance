@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos HTML</title>
+</head>
+<body>
+    <!--
+        <button id="btn1">Ação 1</button>
+        <input id="input1" type="text" />
+    -->
+    <p>Clique para exibir.</p>
+
+    <button onclick="myFunction()">Clique aqui</button>
+    <p id="aqui"></p>
+
+    <button onclick="myFunction2()">Clique aqui</button>
+    <p id="ali"></p>
+
+    <script>
+    function myFunction2()
+    {
+        var x;
+        x="Bem vindo(a)";
+        document.getElementById("ali").innerHTML.onmouseover=x;
+    }
+    function myFunction()
+    {
+        var x;
+        x="Bem vindo(a)";
+        document.getElementById("aqui").innerHTML=x;
+        document.getElementById("ali").onmouseover = x;
+
+        /*var idade=prompt("Digite sua idade:");
+
+        if (idade!=null)
+        {
+        x="Idade: " + idade + " anos.";
+        document.getElementById("aqui").innerHTML=x;
+        }*/
+
+        /*function teste() {
+            console.log("Olá Mundo");
+        }
+        document.getElementById("btn1").onclick = teste;
+        //document.getElementById("btn1").onmouseover = teste;
+        //document.getElementById("input1").onkeyup = function(){
+          //console.log("tecla pressionada");
+        //};
+        */
+
+    }
+    </script>
+        
+</body>
+</html>

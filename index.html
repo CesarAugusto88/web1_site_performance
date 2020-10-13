@@ -33,6 +33,11 @@
     <div class="jumbotron hero-technology" style="height: 400px;background: url(&quot;assets/img/pexels-garvin-st-villier-3311574.jpeg&quot;) center / cover no-repeat;">
         <h1 class="hero-title" style="text-align: center;">Conheça nossos&nbsp; pacotes de performance</h1>
     </div>
+    <!--Evento mouse JS-->
+    <div style="text-align: center; height: 40px; background-color:#aaa19f;"onmouseover="mOver(this)" onmouseout="mOut(this)">
+        Passe o mouse aqui
+    </div>
+
     <div class="article-list"></div>
     <div class="article-list">
         <div class="container">
@@ -124,6 +129,19 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
+    
+    <script>
+        function mOver(obj)
+        {
+        obj.innerHTML="Bem vindo(a) ao site Performance!"
+        }
+        
+        function mOut(obj)
+        {
+        obj.innerHTML="Passe o mouse aqui"
+        }
+    </script>
+        
 </body>
 
 </html>
